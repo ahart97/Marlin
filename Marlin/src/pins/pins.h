@@ -51,6 +51,13 @@
 
 #define HAS_FREE_AUX2_PINS !(BOTH(ULTRA_LCD, NEWPANEL) && ANY(PANEL_ONE, VIKI2, miniVIKI, MINIPANEL, REPRAPWORLD_KEYPAD))
 
+// Test the target within the included pins file
+#ifdef __MARLIN_PREBUILD__
+  #define NOT_TARGET(V...) 0
+#else
+  #define NOT_TARGET(V...) NONE(V)
+#endif
+
 //
 // RAMPS 1.3 / 1.4 - ATmega1280, ATmega2560
 //
@@ -414,6 +421,8 @@
   #include "lpc1769/pins_BTT_SKR_V1_4_TURBO.h"  // LPC1769                                env:LPC1769
 #elif MB(MKS_SGEN_L_V2)
   #include "lpc1769/pins_MKS_SGEN_L_V2.h"       // LPC1769                                env:LPC1769
+#elif MB(BTT_SKR_E3_TURBO)
+  #include "lpc1769/pins_BTT_SKR_E3_TURBO.h"    // LPC1769                                env:LPC1769
 
 //
 // Due (ATSAM) boards

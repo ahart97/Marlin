@@ -25,6 +25,10 @@
   #define BOARD_INFO_NAME "BTT SKR V1.4"
 #endif
 
+#ifndef BOARD_CUSTOM_BUILD_FLAGS
+  #define BOARD_CUSTOM_BUILD_FLAGS -DLPC_PINCFG_UART3_P4_28
+#endif
+
 //
 // SD Connection
 //
@@ -149,8 +153,8 @@
   #define E1_CS_PIN                        P1_01
 #endif
 
-#define TEMP_1_PIN                      P0_23_A0  // A2 (T2) - (69) - TEMP_1_PIN
-#define TEMP_BED_PIN                    P0_25_A2  // A0 (T0) - (67) - TEMP_BED_PIN
+#define TEMP_1_PIN                      P0_23_A0  // A0 (T0) - (67) - TEMP_1_PIN
+#define TEMP_BED_PIN                    P0_25_A2  // A2 (T2) - (69) - TEMP_BED_PIN
 
 //
 // Software SPI pins for TMC2130 stepper drivers
