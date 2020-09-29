@@ -826,6 +826,7 @@
   #define EXTRUDE_MINTEMP 170
 #endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // This flag indicates if Neopixel pins are shared or separated
 #if EITHER(MULTIPLE_NEOPIXEL_TYPES, NEOPIXEL2_INSERIES)
@@ -833,3 +834,5 @@
 #endif
 =======
 >>>>>>> upstream/bugfix-2.0.x
+=======
+>>>>>>> upstream/2.0.x
