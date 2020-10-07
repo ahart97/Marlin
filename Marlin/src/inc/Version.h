@@ -43,9 +43,13 @@
  */
 #ifndef STRING_DISTRIBUTION_DATE
 <<<<<<< HEAD
+<<<<<<< HEAD
   #define STRING_DISTRIBUTION_DATE "2020-09-27"
 =======
   #define STRING_DISTRIBUTION_DATE "2020-09-29"
+>>>>>>> upstream/bugfix-2.0.x
+=======
+  #define STRING_DISTRIBUTION_DATE "2020-10-01"
 >>>>>>> upstream/bugfix-2.0.x
 #endif
 
